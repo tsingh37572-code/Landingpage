@@ -1,87 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Premium Telegram</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Premium Dark Blue Gradient */
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-            border: 1px solid rgba(255,255,255,0.1);
-            max-width: 350px;
-            width: 85%;
-        }
-
-        .icon {
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
-
-        h1 {
-            margin-top: 0;
-            font-size: 26px;
-            color: #FFD700; /* Gold Color */
-            text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
-            letter-spacing: 1px;
-        }
-
-        p {
-            font-size: 15px;
-            margin-bottom: 35px;
-            color: #dcdcdc;
-            line-height: 1.5;
-        }
-
-        .btn {
-            background: linear-gradient(45deg, #00b09b, #96c93d); /* Fresh Green Gradient */
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 50px;
-            display: inline-block;
-            box-shadow: 0 8px 15px rgba(0, 176, 155, 0.4);
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            width: 80%;
-        }
-
-        .btn:active {
-            transform: scale(0.95);
-            box-shadow: 0 4px 10px rgba(0, 176, 155, 0.4);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join singh tipper</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: #d6e8ce; /* Telegram jaisa light green background */
+    }
+    .header {
+        background-color: #517da2;
+        color: white;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-logo {
+        font-weight: bold;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+    .header-btn {
+        background-color: #3390ec;
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 60px);
+        padding: 20px;
+    }
+    .card {
+        background-color: #212121; /* Black color ka box */
+        color: white;
+        border-radius: 15px;
+        padding: 30px 20px;
+        width: 100%;
+        max-width: 360px;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .profile-pic {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        background-color: #333;
+    }
+    .channel-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+    }
+    .bio-text {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        color: #e0e0e0;
+    }
+    .link-text {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .url-text {
+        color: white;
+        font-size: 15px;
+        word-break: break-all;
+        margin-bottom: 20px;
+    }
+    .timer {
+        color: #3390ec;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    .join-btn {
+        background-color: #3390ec;
+        color: white;
+        text-decoration: none;
+        padding: 12px 0;
+        width: 80%;
+        display: inline-block;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 20px;
+        transition: 0.2s;
+    }
+    .join-btn:active {
+        transform: scale(0.95);
+    }
+    .footer-text {
+        font-size: 12px;
+        color: #777;
+    }
+    .footer-text strong {
+        color: #aaa;
+    }
+</style>
 </head>
 <body>
 
-    <div class="card">
-        <div class="icon">🏏</div>
-        <h1>Free Match Predictions</h1>
-        <p>Get Daily Sure Tips, Expert Analysis, and Winning Updates straight to your phone. Join the community now!</p>
-        <a href="https://t.me/CrownCricketTips" class="btn">🚀 JOIN TELEGRAM</a>
+<div class="header">
+    <div class="header-logo">
+        <svg viewBox="0 0 24 24" style="width: 28px; height: 28px; margin-right: 8px;">
+            <path fill="#ffffff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.98 1.26-5.59 3.7-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.89.03-.25.38-.51 1.05-.78 4.11-1.79 6.86-2.98 8.24-3.55 3.92-1.62 4.74-1.9 5.28-1.91.12 0 .39.03.53.15.11.1.15.23.16.35-.01.07-.01.14-.02.26z"/>
+        </svg>
+        Telegram
     </div>
+    <div class="header-btn">DOWNLOAD TELEGRAM</div>
+</div>
+
+<div class="container">
+    <div class="card">
+        
+        <img src="https://ui-avatars.com/api/?name=singh+tipper&background=3390ec&color=fff&size=150" alt="Channel Photo" class="profile-pic">
+        
+        <h1 class="channel-title">singh tipper</h1>
+        
+        <div class="bio-text">
+            🏏 Daily Cricket Match Prediction<br>
+            🎯 Toss + Match Winner Analysis<br>
+            📊 Stats Based Prediction<br>
+            ⚡ Fast Updates Before Match
+        </div>
+        
+        <div class="link-text">Original singh tipper Link 👇</div>
+        <div class="url-text">https://t.me/+6NE-O9olGDY1Mjhl</div>
+        
+        <div class="timer" id="timerDisplay">TIME LEFT: 7 SECONDS</div>
+        
+        <a href="https://t.me/+6NE-O9olGDY1Mjhl" class="join-btn">JOIN CHANNEL</a>
+        
+        <div class="footer-text">
+            You are invited to the channel <strong>singh tipper</strong> Click <strong>above to join.</strong>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 7 Second Timer aur Auto-Redirect ka Logic
+    let timeLeft = 7;
+    const timerDisplay = document.getElementById('timerDisplay');
+    const redirectUrl = "https://t.me/+6NE-O9olGDY1Mjhl";
+
+    const countdown = setInterval(() => {
+        timeLeft--;
+        timerDisplay.innerText = "TIME LEFT: " + timeLeft + " SECONDS";
+        
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            timerDisplay.innerText = "REDIRECTING...";
+            window.location.href = redirectUrl; // Yahan automatic redirect ho jayega
+        }
+    }, 1000); // 1000ms = 1 second
+</script>
 
 </body>
 </html>
